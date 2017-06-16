@@ -33,7 +33,19 @@ described in detail below.
 
 Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account.
 
-## 4. Create the notebook
+## 2. Create the notebook
+
+Create the Project:
+* From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the "Projects" tab at the top or scroll down to "Recently updated projects".
+* Click on "+ Create Project" in the Projects tab view or "+ New Project" under Recently updated projects.
+* Choose a "Name" and, optionally, a "Description". Accept the default "DSX-Spark" for Spark Service, "Object Storage (Swift API)" for Storage Type, and "DSX-ObjectStorage" for Target Object Storage Instance.
+* Click "Create".
+
+Create the Notebook:
+* In you project, click "add notebooks".
+* Click the tab for "From URL" and enter a "Name" and optional "Description".
+* In the "Notebook URL" box put: https://github.com/IBM/pixiedust-traffic-analysis/blob/master/notebooks/pixiedust-traffic-analysis.ipynb
+* Accept the default "DSX-Spark" for Spark Service and click "Create Notebook".
 
 Use the menu on the left to select `My Projects` and then `Default Project`.
 Click on `Add notebooks` (upper right) to create a notebook.
@@ -47,7 +59,7 @@ Click on `Add notebooks` (upper right) to create a notebook.
 
 ![](doc/source/images/create_notebook.png)
 
-## 5. Run the notebook
+## 3. Run the notebook
 
 When a notebook is executed, what is actually happening is that each code cell in
 the notebook is executed, in order, from top to bottom.
@@ -73,7 +85,7 @@ There are several ways to execute the code cells in your notebook:
     panel. Here you can schedule your notebook to be executed once at some future
     time, or repeatedly at your specified interval.
 
-## 7. Save and Share
+## 4. Save and Share
 
 ### How to save your work:
 
