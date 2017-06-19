@@ -14,6 +14,7 @@ When the reader has completed this journey, they will understand how to:
 
 The intended audience for this journey is application developers and other stakeholders who wish to utilize the power of Data Science quickly and effectively.
 
+![](https://github.com/IBM/pixiedust-traffic-analysis/blob/master/docs/sources/pixiedustTrafficFlowDiagram.jpg)
 # Included Components
 
 * [Data Science](https://developer.ibm.com/code/technologies/data-science/)
