@@ -262,7 +262,7 @@ options to specify exactly what you want shared from your notebook:
 * A variety of `download as` options are also available in the menu.
 
 ### Sample Output
-There is a sample of the output in data/examples/pixiedust-traffic-analysis.html .
+There is a sample of the output in data/examples/pixiedust-traffic-analysis.html.
 This can be viewed in rawgit with this link:
 [pixiedust-traffic-analysis.html](https://cdn.rawgit.com/IBM/pixiedust-traffic-analysis/783542ab87a71db93e7d9b95f732697c4219cf51/data/examples/pixiedust-traffic-analysis.html)
-> Note: some interactive map functionality, like ```Options``` and ```Layers``` will not work. To see these, you must run the notebook itself.
+> Note: Some interactive map functionality, like ```Options``` and ```Layers``` will not work. To see these, you must run the notebook itself.
