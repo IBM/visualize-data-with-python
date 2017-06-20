@@ -174,7 +174,7 @@ pd_options = “{{this.formatOptions(this.mapJSONOptions)}}”
 
 > Note: setup is a special method that will be called automatically when the PixieApp is initialized.
 
-	```
+```
 	   def setup(self):
 		self.mapJSONOptions = {
 		  "mapboxtoken": "pk.eyJ1IjoicmFqcnNpbmdoIiwiYSI6ImNqM2s4ZDg4djAwcGYyd3BwaGxwaDV3bWoifQ.d5Rklkdu5MeGAnXu1GMNYw",
@@ -187,10 +187,12 @@ pd_options = “{{this.formatOptions(this.mapJSONOptions)}}”
 		  "keyFields": "X,Y",
 		  "basemap": "light-v9"
 		}
-	```
+```
 
-	#### Create the GeoJSON Custom Layers
-	```
+#### Create the GeoJSON Custom Layers
+
+
+```
 	from pixiedust.display.app import *
 	from pixiedust.apps.mapboxBase import MapboxBase
 
@@ -198,7 +200,7 @@ pd_options = “{{this.formatOptions(this.mapJSONOptions)}}”
 	class SFDashboard(MapboxBase):
 	    def setup(self):
 	...<snip>...
-self.setLayers([
+    self.setLayers([
         {
             "name": "Speeding",
             "url": "https://data.sfgov.org/api/geospatial/mfjz-pnye?method=export&format=GeoJSON"
@@ -212,18 +214,22 @@ self.setLayers([
                 "icon-size": 1.5
             }
         },
-...<snip>...
+    ...<snip>...
 ```
+
+
 #### Create the Checkboxes from the Layers
+
+
 ```
-...<snip>...
+    ...<snip>...
         {% for layer in this.layers %}
         <div class="rendererOpt checkbox checkbox-primary">
             <input type="checkbox" pd_refresh="map{{prefix}}" pd_script="self.toggleLayer({{loop.index0}})">
             <label>{{layer["name"]}}</label>
         </div>      
         {%endfor%}
-...<snip>...
+    ...<snip>...
 ```
 The user can now select layers and the map will dynamically add or remove them.
 
