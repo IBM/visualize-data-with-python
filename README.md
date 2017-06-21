@@ -14,7 +14,7 @@ When the reader has completed this journey, they will understand how to:
 
 The intended audience for this journey is application developers and other stakeholders who wish to utilize the power of Data Science quickly and effectively.
 
-![](https://github.com/IBM/pixiedust-traffic-analysis/blob/master/docs/sources/pixiedustTrafficFlowDiagram.jpg)
+![](https://github.com/IBM/pixiedust-traffic-analysis/blob/master/doc/source/images/pixiedustTrafficFlowDiagram.jpg)
 # Included Components
 
 * [Data Science](https://developer.ibm.com/code/technologies/data-science/)
@@ -58,7 +58,7 @@ Click on `Add notebooks` (upper right) to create a notebook.
 * Use the `Spark Service` pulldown to select your `DSX-Spark` service.
 * Click the `Create Notebook` button.
 
-![](docs/sources/create_notebook.png)
+![](doc/source/images/create_notebook.png)
 
 ## 3. Run the notebook
 
@@ -93,7 +93,7 @@ After running each cell of the notebook, the results will display. When we use P
 ### Options for PixieDust Charts
 
 After running cell #3 `display(accidents)`, we can see by clicking the `Options` button that we are able to manipulate the keys and values for the fields used in the chart:
-![](docs/sources/pixieChartOptions.png)
+![](doc/source/images/pixieChartOptions.png)
 
 Following the instructions, we use DaysOfWeek and IncidntNum, but the user can change the keys and value to see how the chart will look with different inputs.
 
@@ -105,12 +105,12 @@ accidents.registerTempTable("accidents")
 taraval = sqlContext.sql("SELECT * FROM accidents WHERE PdDistrict='TARAVAL'")
 ```
 We then get an interactive map of the Taraval district:
-![](docs/sources/taravalSQLresults.png)
+![](doc/source/images/taravalSQLresults.png)
 
 ### Create a PixieApp Dashboard
 
 With PixieApps, we can create a dashboard with map layers that can be used to visualize various datasets (i.e. Speeding, Traffic Calming, Police Districts, and Crimes):
-![](docs/sources/pixieAppsLayers.png)
+![](doc/source/images/pixieAppsLayers.png)
 
 #### Create the skeleton
 ```
@@ -155,7 +155,7 @@ The best way to generate the pd_options for a PixieDust visualization is to:
 3.  Select View/Cell Toobar/Edit metadata menu 
 4.  Click on the “Edit Metadata” button and copy the PixieDust metadata  
 
-![](docs/sources/pixieEditMetadata.png)
+![](doc/source/images/pixieEditMetadata.png)
 
  To conform to the pd_options notation, we need to transform the PixieDust JSON metadata into an attribute string with the following format: ```“key1=value1;key2=value2;…”```
 
