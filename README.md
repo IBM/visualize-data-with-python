@@ -48,16 +48,6 @@ Create the Notebook:
 * In the "Notebook URL" box put: https://github.com/IBM/pixiedust-traffic-analysis/blob/master/notebooks/pixiedust-traffic-analysis.ipynb
 * Accept the default "DSX-Spark" for Spark Service and click "Create Notebook".
 
-Use the menu on the left to select `My Projects` and then `Default Project`.
-Click on `Add notebooks` (upper right) to create a notebook.
-
-* Select the `From URL` tab.
-* Enter a name for the notebook.
-* Optionally, enter a description for the notebook.
-* Enter this Notebook URL:https://github.com/IBM/pixiedust-traffic-analysis/blob/master/notebooks/pixiedust-traffic-analysis.ipynb
-* Use the `Spark Service` pulldown to select your `DSX-Spark` service.
-* Click the `Create Notebook` button.
-
 ![](doc/source/images/create_notebook.png)
 
 ## 3. Run the notebook
