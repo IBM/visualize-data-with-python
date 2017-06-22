@@ -37,8 +37,8 @@ Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By sig
 ## 2. Create the notebook
 
 Create the Project:
-* From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the "Projects" tab at the top or scroll down to "Recently updated projects".
-* Click on "+ Create Project" in the Projects tab view or "+ New Project" under Recently updated projects.
+* From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the "Get Started" tab at the top or scroll down to "Recently updated projects".
+* Click on "+ Create Project" or "+ New Project" under Recently updated projects.
 * Choose a "Name" and, optionally, a "Description". Accept the default "DSX-Spark" for Spark Service, "Object Storage (Swift API)" for Storage Type, and "DSX-ObjectStorage" for Target Object Storage Instance.
 * Click "Create".
 
