@@ -92,11 +92,12 @@ There are several ways to execute the code cells in your notebook:
 
 ## 4. Analyze the Results
 
-After running each cell of the notebook, the results will display. When we use PixieDust display() to create an interactive dataset, we are able to change the visualization using tables, graphs, and charts.
+After running each cell of the notebook, the results will display. When we use PixieDust ``display()`` to create an interactive dataset, we are able to change the visualization using tables, graphs, and charts.
 
 ### Options for PixieDust Charts
 
 After running cell #3 `display(accidents)`, we can see by clicking the `Options` button that we are able to manipulate the keys and values for the fields used in the chart:
+
 ![](doc/source/images/pixieChartOptions.png)
 
 Following the instructions, we use DaysOfWeek and IncidntNum, but the user can change the keys and value to see how the chart will look with different inputs.
@@ -104,19 +105,24 @@ Following the instructions, we use DaysOfWeek and IncidntNum, but the user can c
 ### Use Spark SQL to query data
 
 We use Spark SQL to isolate data to the Taraval district:
+
 ```
 accidents.registerTempTable("accidents")
 taraval = sqlContext.sql("SELECT * FROM accidents WHERE PdDistrict='TARAVAL'")
 ```
+
 We then get an interactive map of the Taraval district:
+
 ![](doc/source/images/taravalSQLresults.png)
 
 ### Create a PixieApp Dashboard
 
 With PixieApps, we can create a dashboard with map layers that can be used to visualize various datasets (i.e. Speeding, Traffic Calming, Police Districts, and Crimes):
+
 ![](doc/source/images/pixieAppsLayers.png)
 
 #### Create the skeleton
+
 ```
 from pixiedust.display.app import *
 
@@ -144,7 +150,9 @@ class SFDashboard():
 </div>
 """
 ```
+
 #### Create the Map of Accidents
+
 ```
 <div id="map{{prefix}}" pd_entity pd_options="{{this.formatOptions(this.mapJSONOptions)}}"/>
 ```
@@ -163,8 +171,7 @@ The best way to generate the pd_options for a PixieDust visualization is to:
 
 ![](doc/source/images/pixieEditMetadata.png)
 
- To conform to the pd_options notation, we need to transform the PixieDust JSON metadata into an attribute string with the following format: ```“key1=value1;key2=value2;…”```
-
+To conform to the pd_options notation, we need to transform the PixieDust JSON metadata into an attribute string with the following format: ```“key1=value1;key2=value2;…”```
 
 To make it easier, we use the a simple Python transform function: 
 ```
@@ -172,42 +179,45 @@ def formatOptions(self, options):
     return ';'.join(["{}={}".format(k,v) for (k, v) in iteritems(options)])
 ```
 
-The formatOptions is then invoked using JinJa2 notation from within the html:
+The ``formatOptions`` is then invoked using JinJa2 notation from within the html:
+
 ```
 pd_options = “{{this.formatOptions(this.mapJSONOptions)}}” 
 ```
+
 #### Initialize the pd_options
 
 > Note: setup is a special method that will be called automatically when the PixieApp is initialized.
 
 ```
-	   def setup(self):
-		self.mapJSONOptions = {
-		  "mapboxtoken": "pk.eyJ1IjoicmFqcnNpbmdoIiwiYSI6ImNqM2s4ZDg4djAwcGYyd3BwaGxwaDV3bWoifQ.d5Rklkdu5MeGAnXu1GMNYw",
-		  "chartsize": "90",
-		  "aggregation": "SUM",
-		  "rowCount": "500",
-		  "handlerId": "mapView",
-		  "rendererId": "mapbox",
-		  "valueFields": "IncidntNum",
-		  "keyFields": "X,Y",
-		  "basemap": "light-v9"
-		}
+def setup(self):
+    self.mapJSONOptions = {
+      	"mapboxtoken": "pk.eyJ1IjoicmFqcnNpbmdoIiwiYSI6ImNqM2s4ZDg4djAwcGYyd3BwaGxwaDV3bWoifQ.d5Rklkdu5MeGAnXu1GMNYw",
+      	"chartsize": "90",
+	"aggregation": "SUM",
+	"rowCount": "500",
+	"handlerId": "mapView",
+	"rendererId": "mapbox",
+	"valueFields": "IncidntNum",
+	"keyFields": "X,Y",
+	"basemap": "light-v9"
+    }
 ```
 
 #### Create the GeoJSON Custom Layers
 
-
 ```
-	from pixiedust.display.app import *
-	from pixiedust.apps.mapboxBase import MapboxBase
+from pixiedust.display.app import *
+from pixiedust.apps.mapboxBase import MapboxBase
 
-	@PixieApp
-	class SFDashboard(MapboxBase):
-	    def setup(self):
-	...<snip>...
+@PixieApp
+class SFDashboard(MapboxBase):
+    def setup(self):
+
+    ...<snip>...
+
     self.setLayers([
-        {
+    {
             "name": "Speeding",
             "url": "https://data.sfgov.org/api/geospatial/mfjz-pnye?method=export&format=GeoJSON"
         },
@@ -220,21 +230,22 @@ pd_options = “{{this.formatOptions(this.mapJSONOptions)}}”
                 "icon-size": 1.5
             }
         },
+
     ...<snip>...
 ```
-
 
 #### Create the Checkboxes from the Layers
 
-
 ```
     ...<snip>...
-        {% for layer in this.layers %}
-        <div class="rendererOpt checkbox checkbox-primary">
-            <input type="checkbox" pd_refresh="map{{prefix}}" pd_script="self.toggleLayer({{loop.index0}})">
-            <label>{{layer["name"]}}</label>
-        </div>      
-        {%endfor%}
+
+    {% for layer in this.layers %}
+    <div class="rendererOpt checkbox checkbox-primary">
+        <input type="checkbox" pd_refresh="map{{prefix}}" pd_script="self.toggleLayer({{loop.index0}})">
+        <label>{{layer["name"]}}</label>
+    </div>      
+    {%endfor%}
+
     ...<snip>...
 ```
 The user can now select layers and the map will dynamically add or remove them.
@@ -267,8 +278,8 @@ options to specify exactly what you want shared from your notebook:
 * `All content, including code`: displays the notebook as is.
 * A variety of `download as` options are also available in the menu.
 
-### Sample Output
-There is a sample of the output in data/examples/pixiedust-traffic-analysis.html.
-This can be viewed in rawgit with this link:
-[pixiedust-traffic-analysis.html](https://cdn.rawgit.com/IBM/pixiedust-traffic-analysis/783542ab87a71db93e7d9b95f732697c4219cf51/data/examples/pixiedust-traffic-analysis.html)
+# Sample Output
+
+There is a sample of the output in [data/examples/pixiedust-traffic-analysis.html](data/examples/pixiedust-traffic-analysis.html), it is best viewed via [rawgit](https://cdn.rawgit.com/IBM/pixiedust-traffic-analysis/783542ab87a71db93e7d9b95f732697c4219cf51/data/examples/pixiedust-traffic-analysis.html).
+
 > Note: Some interactive map functionality, like ```Options``` and ```Layers``` will not work. To see these, you must run the notebook itself.
