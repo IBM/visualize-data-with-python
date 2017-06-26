@@ -1,23 +1,37 @@
-# Work In Progress - Final Version is Coming Soon!
+# Visualize and analyze San Francisco traffic accidents using a Jupyter Notebook, PixieDust, and PixieApps
 
-# pixiedust-traffic-notebook
 In this developer journey we will use PixieDust running on IBM Data Science Experience (DSX) to analyze traffic data from the City of San Francisco. DSX is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data.
 
 When the reader has completed this journey, they will understand how to:
 
-* How to use [Jupyter Notebooks](http://jupyter.org/) to load, visualize, and analyze data
-* How to run Notebooks in [IBM Data Science Experience](https://datascience.ibm.com/)
-* [PixieDust](https://github.com/ibm-cds-labs/pixiedust) Open Source Python library
-* How to build a dashboard using [PixieApps](https://ibm-cds-labs.github.io/pixiedust/pixieapps.html)
-* [City of San Francisco Open Data](https://datasf.org/opendata/)
-* [Mapbox GL](https://www.mapbox.com/mapbox-gl-js/api/) JavaScript library for interactive maps
+* Use [Jupyter Notebooks](http://jupyter.org/) to load, visualize, and analyze data
+* Run Notebooks in [IBM Data Science Experience](https://datascience.ibm.com/)
+* Leverage [PixieDust](https://github.com/ibm-cds-labs/pixiedust) as a python notebook helper
+* Build a dashboard using [PixieApps](https://ibm-cds-labs.github.io/pixiedust/pixieapps.html)
+* Fetch data from [City of San Francisco Open Data](https://datasf.org/opendata/)
+* Create an interactive map with [Mapbox GL](https://www.mapbox.com/mapbox-gl-js/api/)
 
 The intended audience for this journey is application developers and other stakeholders who wish to utilize the power of Data Science quickly and effectively.
 
-![](https://github.com/IBM/pixiedust-traffic-analysis/blob/master/doc/source/images/pixiedustTrafficFlowDiagram.jpg)
+![](https://github.com/IBM/pixiedust-traffic-analysis/blob/master/doc/source/images/architecture.jpg)
+
 # Included Components
 
-* [Data Science](https://developer.ibm.com/code/technologies/data-science/)
+* [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+
+## Featured technologies
+
+* [Jupyter Notebooks](http://jupyter.org/): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
+
+* [PixieDust](https://github.com/ibm-cds-labs/pixiedust) Python helper library for python notebooks
+
+* [PixieApps](https://ibm-cds-labs.github.io/pixiedust/pixieapps.html): Python library used to write UI elements for analytics, and run them directly in a Jupyter notebook.
+
+* [Mapbox GL](https://www.mapbox.com/mapbox-gl-js/api/): JavaScript library that uses WebGL to render interactive maps.
+
+# Watch the Video
+
+[![](http://img.youtube.com/vi/cYUdXFEmxP4/0.jpg)](https://www.youtube.com/watch?v=cYUdXFEmxP4)
 
 # Steps
 
@@ -25,10 +39,10 @@ Follow these steps to setup and run this developer journey. The steps are
 described in detail below.
 
 1. [Sign up for the Data Science Experience](#1-sign-up-for-the-data-science-experience)
-4. [Create the notebook](#4-create-the-notebook)
-5. [Run the notebook](#5-run-the-notebook)
-6. [Analyze the results](#6-analyze-the-results)
-7. [Save and Share](#7-save-and-share)
+2. [Create the notebook](#2-create-the-notebook)
+3. [Run the notebook](#3-run-the-notebook)
+4. [Analyze the results](#4-analyze-the-results)
+5. [Save and Share](#5-save-and-share)
 
 ## 1. Sign up for the Data Science Experience
 
@@ -37,16 +51,16 @@ Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By sig
 ## 2. Create the notebook
 
 Create the Project:
-* From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the "Get Started" tab at the top or scroll down to "Recently updated projects".
-* Click on "+ Create Project" or "+ New Project" under Recently updated projects.
-* Choose a "Name" and, optionally, a "Description". Accept the default "DSX-Spark" for Spark Service, "Object Storage (Swift API)" for Storage Type, and "DSX-ObjectStorage" for Target Object Storage Instance.
-* Click "Create".
+* From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
+* Click on ``+ Create Project`` or ``+ New Project`` under Recently updated projects.
+* Choose a ``Name`` and, optionally, a ``Description``. Accept the default ``DSX-Spark`` for Spark Service, ``Object Storage (Swift API)`` for Storage Type, and ``DSX-ObjectStorage`` for Target Object Storage Instance.
+* Click ``Create``.
 
 Create the Notebook:
-* In you project, click "add notebooks".
-* Click the tab for "From URL" and enter a "Name" and optional "Description".
-* In the "Notebook URL" box put: https://github.com/IBM/pixiedust-traffic-analysis/blob/master/notebooks/pixiedust-traffic-analysis.ipynb
-* Accept the default "DSX-Spark" for Spark Service and click "Create Notebook".
+* In you project, click ``add notebooks``.
+* Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
+* In the ``Notebook URL`` box put: https://github.com/IBM/pixiedust-traffic-analysis/blob/master/notebooks/pixiedust-traffic-analysis.ipynb
+* Accept the default ``DSX-Spark`` for Spark Service and click ``Create Notebook``.
 
 ![](doc/source/images/create_notebook.png)
 
@@ -134,16 +148,18 @@ class SFDashboard():
 ```
 <div id="map{{prefix}}" pd_entity pd_options="{{this.formatOptions(this.mapJSONOptions)}}"/>
 ```
-pd_entity: Tell PixieDust which dataset to work on.
+
+``pd_entity``: Tell PixieDust which dataset to work on.
  
-pd_options: Contains the PixieDust options for the map.
+``pd_options``: Contains the PixieDust options for the map.
+
 #### Generate the pd_options
 
 The best way to generate the pd_options for a PixieDust visualization is to: 
-1.  Call display() on a new cell 
+1.  Call ``display()`` on a new cell 
 2.  Graphically select the options for your chart 
-3.  Select View/Cell Toobar/Edit metadata menu 
-4.  Click on the “Edit Metadata” button and copy the PixieDust metadata  
+3.  Select ``View/Cell Toobar/Edit metadata`` menu 
+4.  Click on the ``Edit Metadata`` button and copy the PixieDust metadata  
 
 ![](doc/source/images/pixieEditMetadata.png)
 
