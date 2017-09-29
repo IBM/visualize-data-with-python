@@ -7,7 +7,7 @@ When the reader has completed this journey, they will understand how to:
 * Use [Jupyter Notebooks](http://jupyter.org/) to load, visualize, and analyze data
 * Run Notebooks in [IBM Data Science Experience](https://datascience.ibm.com/)
 * Leverage [PixieDust](https://github.com/ibm-cds-labs/pixiedust) as a python notebook helper
-* Build a dashboard using [PixieApps](https://ibm-cds-labs.github.io/pixiedust/pixieapps.html)
+* Build a dashboard using [PixieApps](https://ibm-watson-data-lab.github.io/pixiedust/pixieapps.html)
 * Fetch data from [City of San Francisco Open Data](https://datasf.org/opendata/)
 * Create an interactive map with [Mapbox GL](https://www.mapbox.com/mapbox-gl-js/api/)
 
