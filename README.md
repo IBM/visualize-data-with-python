@@ -1,8 +1,8 @@
 # Visualize and analyze San Francisco traffic accidents using a Jupyter Notebook, PixieDust, and PixieApps
 
-In this developer journey we will use PixieDust running on IBM Data Science Experience (DSX) to analyze traffic data from the City of San Francisco. DSX is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data.
+In this Code Pattern we will use PixieDust running on IBM Data Science Experience (DSX) to analyze traffic data from the City of San Francisco. DSX is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data.
 
-When the reader has completed this journey, they will understand how to:
+When the reader has completed this Code Pattern, they will understand how to:
 
 * Use [Jupyter Notebooks](http://jupyter.org/) to load, visualize, and analyze data
 * Run Notebooks in [IBM Data Science Experience](https://datascience.ibm.com/)
@@ -11,9 +11,16 @@ When the reader has completed this journey, they will understand how to:
 * Fetch data from [City of San Francisco Open Data](https://datasf.org/opendata/)
 * Create an interactive map with [Mapbox GL](https://www.mapbox.com/mapbox-gl-js/api/)
 
-The intended audience for this journey is application developers and other stakeholders who wish to utilize the power of Data Science quickly and effectively.
+The intended audience for this Code Pattern is application developers and other stakeholders who wish to utilize the power of Data Science quickly and effectively.
 
 ![](https://github.com/IBM/pixiedust-traffic-analysis/blob/master/doc/source/images/architecture.png)
+
+# Flow
+
+1. San Francisco traffic data is downloaded from [City of San Francisco Open Data](https://datasf.org/opendata/)
+2. Traffic data is utilized for analysis in a Jupyter notebook.
+3. PixieDust is used to visualize graphs, charts, and maps.
+4. The user is able to choose graph and chart representations, map layers, and other PixieDust features.
 
 # Included Components
 
@@ -35,7 +42,7 @@ The intended audience for this journey is application developers and other stake
 
 # Steps
 
-Follow these steps to setup and run this developer journey. The steps are
+Follow these steps to setup and run this Code Pattern. The steps are
 described in detail below.
 
 1. [Sign up for the Data Science Experience](#1-sign-up-for-the-data-science-experience)
@@ -46,7 +53,7 @@ described in detail below.
 
 ## 1. Sign up for the Data Science Experience
 
-Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your Bluemix account.
+Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your IBM Cloud account.
 
 ## 2. Create the notebook
 
@@ -283,6 +290,12 @@ options to specify exactly what you want shared from your notebook:
 There is a sample of the output in [data/examples/pixiedust-traffic-analysis.html](data/examples/pixiedust-traffic-analysis.html), it is best viewed via [rawgit](https://cdn.rawgit.com/IBM/pixiedust-traffic-analysis/783542ab87a71db93e7d9b95f732697c4219cf51/data/examples/pixiedust-traffic-analysis.html).
 
 > Note: Some interactive map functionality, like ```Options``` and ```Layers``` will not work. To see these, you must run the notebook itself.
+
+# Links
+* [Demo on youtube](https://www.youtube.com/watch?v=cYUdXFEmxP4)
+* [PixieDust](https://github.com/ibm-cds-labs/pixiedust)
+* [PixieApps](https://ibm-watson-data-lab.github.io/pixiedust/pixieapps.html)
+* [City of San Francisco Open Data](https://datasf.org/opendata/)
 
 # License
 
