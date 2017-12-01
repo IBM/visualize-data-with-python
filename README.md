@@ -148,7 +148,7 @@ class SFDashboard():
         <div class="rendererOpt checkbox checkbox-primary">
             <input type="checkbox" pd_refresh="map{{prefix}}" pd_script="self.toggleLayer({{loop.index0}})">
             <label>{{layer["name"]}}</label>
-        </div>      
+        </div>
         {%endfor%}
     </div>
     <div class="form-group col-sm-10">
@@ -165,22 +165,22 @@ class SFDashboard():
 ```
 
 ``pd_entity``: Tell PixieDust which dataset to work on.
- 
+
 ``pd_options``: Contains the PixieDust options for the map.
 
 #### Generate the pd_options
 
-The best way to generate the pd_options for a PixieDust visualization is to: 
-1.  Call ``display()`` on a new cell 
-2.  Graphically select the options for your chart 
-3.  Select ``View/Cell Toobar/Edit metadata`` menu 
-4.  Click on the ``Edit Metadata`` button and copy the PixieDust metadata  
+The best way to generate the pd_options for a PixieDust visualization is to:
+1.  Call ``display()`` on a new cell
+2.  Graphically select the options for your chart
+3.  Select ``View/Cell Toobar/Edit metadata`` menu
+4.  Click on the ``Edit Metadata`` button and copy the PixieDust metadata
 
 ![](doc/source/images/pixieEditMetadata.png)
 
 To conform to the pd_options notation, we need to transform the PixieDust JSON metadata into an attribute string with the following format: ```“key1=value1;key2=value2;…”```
 
-To make it easier, we use the a simple Python transform function: 
+To make it easier, we use the a simple Python transform function:
 ```
 def formatOptions(self, options):
     return ';'.join(["{}={}".format(k,v) for (k, v) in iteritems(options)])
@@ -189,7 +189,7 @@ def formatOptions(self, options):
 The ``formatOptions`` is then invoked using JinJa2 notation from within the html:
 
 ```
-pd_options = “{{this.formatOptions(this.mapJSONOptions)}}” 
+pd_options = “{{this.formatOptions(this.mapJSONOptions)}}”
 ```
 
 #### Initialize the pd_options
@@ -250,7 +250,7 @@ class SFDashboard(MapboxBase):
     <div class="rendererOpt checkbox checkbox-primary">
         <input type="checkbox" pd_refresh="map{{prefix}}" pd_script="self.toggleLayer({{loop.index0}})">
         <label>{{layer["name"]}}</label>
-    </div>      
+    </div>
     {%endfor%}
 
     ...<snip>...
