@@ -60,11 +60,11 @@ Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By sig
 Create the Project:
 * From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
 * Click on ``+ Create Project`` or ``+ New Project`` under Recently updated projects.
-* Choose a ``Name`` and, optionally, a ``Description``. Accept the default ``DSX-Spark`` for Spark Service, ``Object Storage (Swift API)`` for Storage Type, and ``DSX-ObjectStorage`` for Target Object Storage Instance.
+* Choose a ``Name`` and, optionally, a ``Description``. Accept the default ``DSX-Spark`` for Spark Service, ``Object Storage `` for Storage Type, and ``DSX-ObjectStorage`` for Target Object Storage Instance.
 * Click ``Create``.
 
 Create the Notebook:
-* In you project, click ``add notebooks``.
+* In you project, click ``+ add to project`` -> ``notebook``.
 * Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
 * In the ``Notebook URL`` box put: https://github.com/IBM/pixiedust-traffic-analysis/blob/master/notebooks/pixiedust-traffic-analysis.ipynb
 * Accept the default ``DSX-Spark`` for Spark Service and click ``Create Notebook``.
