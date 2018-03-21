@@ -1,11 +1,11 @@
 # Visualize and analyze San Francisco traffic accidents using a Jupyter Notebook, PixieDust, and PixieApps
 
-In this Code Pattern we will use PixieDust running on IBM Data Science Experience (DSX) to analyze traffic data from the City of San Francisco. DSX is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data.
+In this Code Pattern we will use PixieDust running on IBM Watson Studio to analyze traffic data from the City of San Francisco. Watson Studio is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data.
 
 When the reader has completed this Code Pattern, they will understand how to:
 
 * Use [Jupyter Notebooks](http://jupyter.org/) to load, visualize, and analyze data
-* Run Notebooks in [IBM Data Science Experience](https://datascience.ibm.com/)
+* Run Notebooks in [IBM Watson Studio](https://datascience.ibm.com/)
 * Leverage [PixieDust](https://github.com/ibm-cds-labs/pixiedust) as a python notebook helper
 * Build a dashboard using [PixieApps](https://ibm-watson-data-lab.github.io/pixiedust/pixieapps.html)
 * Fetch data from [City of San Francisco Open Data](https://datasf.org/opendata/)
@@ -24,7 +24,7 @@ The intended audience for this Code Pattern is application developers and other 
 
 # Included Components
 
-* [IBM Data Science Experience](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [IBM Watson Studio](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 
 ## Featured technologies
 
@@ -45,29 +45,29 @@ The intended audience for this Code Pattern is application developers and other 
 Follow these steps to setup and run this Code Pattern. The steps are
 described in detail below.
 
-1. [Sign up for the Data Science Experience](#1-sign-up-for-the-data-science-experience)
+1. [Sign up for the Watson Studio](#1-sign-up-for-the-data-science-experience)
 2. [Create the notebook](#2-create-the-notebook)
 3. [Run the notebook](#3-run-the-notebook)
 4. [Analyze the results](#4-analyze-the-results)
 5. [Save and Share](#5-save-and-share)
 
-## 1. Sign up for the Data Science Experience
+## 1. Sign up for the Watson Studio
 
-Sign up for IBM's [Data Science Experience](http://datascience.ibm.com/). By signing up for the Data Science Experience, two services: ``DSX-Spark`` and ``DSX-ObjectStore`` will be created in your IBM Cloud account.
+Sign up for IBM's [Watson Studio](http://datascience.ibm.com/). By signing up for the Watson Studio, two services: ``Watson Studio-Spark`` and ``Watson Studio-ObjectStore`` will be created in your IBM Cloud account.
 
 ## 2. Create the notebook
 
 Create the Project:
-* From the [IBM Data Science Experience page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
+* From the [IBM Watson Studio page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
 * Click on ``+ Create Project`` or ``+ New Project`` under Recently updated projects.
-* Choose a ``Name`` and, optionally, a ``Description``. Accept the default ``DSX-Spark`` for Spark Service, ``Object Storage `` for Storage Type, and ``DSX-ObjectStorage`` for Target Object Storage Instance.
+* Choose a ``Name`` and, optionally, a ``Description``. Accept the default ``Watson Studio-Spark`` for Spark Service, ``Object Storage `` for Storage Type, and ``Watson Studio-ObjectStorage`` for Target Object Storage Instance.
 * Click ``Create``.
 
 Create the Notebook:
 * In you project, click ``+ add to project`` -> ``notebook``.
 * Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
 * In the ``Notebook URL`` box put: https://github.com/IBM/pixiedust-traffic-analysis/blob/master/notebooks/pixiedust-traffic-analysis.ipynb
-* Accept the default ``DSX-Spark`` for Spark Service and click ``Create Notebook``.
+* Accept the default ``Watson Studio-Spark`` for Spark Service and click ``Create Notebook``.
 
 ![](doc/source/images/create_notebook.png)
 
@@ -303,7 +303,7 @@ There is a sample of the output in [data/examples/pixiedust-traffic-analysis.htm
 * **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/code/technologies/data-science/)
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
 * **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
-* **Data Science Experience**: Master the art of data science with IBM's [Data Science Experience](https://datascience.ibm.com/)
+* **Watson Studio**: Master the art of data science with IBM's [Watson Studio](https://datascience.ibm.com/)
 
 # License
 
