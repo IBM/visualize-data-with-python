@@ -19,10 +19,11 @@ The intended audience for this Code Pattern is application developers and other 
 
 # Flow
 
-1. San Francisco traffic data is downloaded from [City of San Francisco Open Data](https://datasf.org/opendata/)
-2. Traffic data is utilized for analysis in a Jupyter notebook.
-3. PixieDust is used to visualize graphs, charts, and maps.
-4. The user is able to choose graph and chart representations, map layers, and other PixieDust features.
+1. Load the provided notebook into the Watson Studio platform.
+2. [DataSF Open Data](https://datasf.org/opendata/) traffic info is loaded into the Jupyter Notebook.
+3. The notebook analyzes the traffic info.
+4. You can interactively change charts and graphs.
+5. A PixieApp dashboard is created and can be interacted with.
 
 # Included Components
 
