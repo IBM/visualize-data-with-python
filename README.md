@@ -53,21 +53,21 @@ described in detail below.
 
 ## 1. Sign up for the Watson Studio
 
-Sign up for IBM's [Watson Studio](http://datascience.ibm.com/). By signing up for the Watson Studio, two services: ``Watson Studio-Spark`` and ``Watson Studio-ObjectStore`` will be created in your IBM Cloud account.
+Sign up for IBM's [Watson Studio](http://datascience.ibm.com/). By signing up for the Watson Studio, two services: ``Apache Spark`` and ``Object Storage`` will be created in your IBM Cloud account.
 
 ## 2. Create the notebook
 
 Create the Project:
 * From the [IBM Watson Studio page](https://apsportal.ibm.com/analytics) either click the ``Get Started`` tab at the top or scroll down to ``Recently updated projects``.
 * Click on ``+ Create Project`` or ``+ New Project`` under Recently updated projects.
-* Choose a ``Name`` and, optionally, a ``Description``. Accept the default ``Watson Studio-Spark`` for Spark Service, ``Object Storage `` for Storage Type, and ``Watson Studio-ObjectStorage`` for Target Object Storage Instance.
+* Choose a ``Name`` and, optionally, a ``Description``. Accept the default ``Apache Spark`` for Spark Service, ``Object Storage `` for Storage Type, and ``Watson Studio-ObjectStorage`` for Target Object Storage Instance.
 * Click ``Create``.
 
 Create the Notebook:
 * In you project, click ``+ add to project`` -> ``notebook``.
 * Click the tab for ``From URL`` and enter a ``Name`` and optional ``Description``.
 * In the ``Notebook URL`` box put: https://github.com/IBM/pixiedust-traffic-analysis/blob/master/notebooks/pixiedust-traffic-analysis.ipynb
-* Accept the default ``Watson Studio-Spark`` for Spark Service and click ``Create Notebook``.
+* Accept the default ``Apache Spark`` for Spark Service and click ``Create Notebook``.
 
 ![](doc/source/images/create_notebook.png)
 
