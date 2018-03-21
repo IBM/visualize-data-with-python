@@ -7,7 +7,7 @@ In this Code Pattern we will use PixieDust running on IBM Watson Studio to analy
 When the reader has completed this Code Pattern, they will understand how to:
 
 * Use [Jupyter Notebooks](http://jupyter.org/) to load, visualize, and analyze data
-* Run Notebooks in [IBM Watson Studio](https://datascience.ibm.com/)
+* Run Notebooks in [IBM Watson Studio](https://dataplatform.ibm.com/)
 * Leverage [PixieDust](https://github.com/ibm-cds-labs/pixiedust) as a python notebook helper
 * Build a dashboard using [PixieApps](https://ibm-watson-data-lab.github.io/pixiedust/pixieapps.html)
 * Fetch data from [City of San Francisco Open Data](https://datasf.org/opendata/)
