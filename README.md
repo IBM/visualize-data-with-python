@@ -1,3 +1,7 @@
+# OBSOLETE: This code pattern is obsolete
+
+> The dataset for City of San Francisco Traffic incidents is no longer available. This repository will not be updated. We will keep the repository available for folks interested in some of the technical details. A new Pattern is being created using City of SF Police Incidents.
+
 # Visualize and analyze San Francisco traffic accidents using a Jupyter Notebook, PixieDust, and PixieApps
 
 > Data Science Experience is now Watson Studio. Although some images in this code pattern may show the service as Data Science Experience, the steps and processes will still work.
