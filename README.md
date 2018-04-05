@@ -69,15 +69,11 @@ Sign up for IBM's [Watson Studio](https://dataplatform.ibm.com). By creating a p
 
 * In your project go to the `Settings` tab, scroll down to `Associated Services` and choose `+ Add service` -> `Spark`
 
-<p align="center">
-  <img width="500" height="150" src="doc/source/images/createSparkService.png">
-</p>
+![](doc/source/images/createSparkService.png)
 
 * Either choose and `Existing` Spark service, or create a `New` one
 
-<p align="center">
-  <img width="300" height="150" src="doc/source/images/chooseExistingSpark.png">
-</p>
+<img width="500" src="doc/source/images/chooseExistingSpark.png">
 
 ## 3. Create the notebook
 
@@ -90,15 +86,11 @@ Sign up for IBM's [Watson Studio](https://dataplatform.ibm.com). By creating a p
 * Enter this Notebook URL: https://github.com/IBM/pixiedust-traffic-analysis/blob/master/notebooks/pixiedust-traffic-analysis.ipynb
 * Select the Spark runtime you've associated with this project:
 
-<p align="center">
-  <img width="300" height="150" src="doc/source/images/chooseSparkRuntime.png">
-</p>
+<img width="500" src="doc/source/images/chooseSparkRuntime.png">
 
 * Click the `Create` button.
 
-<p align="center">
-  <img width="500" height="350" src="doc/source/images/create_notebook.png">
-</p>
+![](doc/source/images/create_notebook.png)
 
 ## 4. Run the notebook
 
