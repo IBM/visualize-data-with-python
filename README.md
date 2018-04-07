@@ -1,7 +1,3 @@
-# OBSOLETE: This code pattern is obsolete
-
-> The dataset for City of San Francisco Traffic incidents is no longer available. This repository will not be updated. We will keep the repository available for folks interested in some of the technical details. A new Pattern is being created using City of SF Police Incidents.
-
 # Visualize and analyze San Francisco traffic accidents using a Jupyter Notebook, PixieDust, and PixieApps
 
 > Data Science Experience is now Watson Studio. Although some images in this code pattern may show the service as Data Science Experience, the steps and processes will still work.
@@ -145,7 +141,7 @@ We then get an interactive map of the Taraval district:
 
 ### Create a PixieApp Dashboard
 
-With PixieApps, we can create a dashboard with map layers that can be used to visualize various datasets (i.e. Speeding, Traffic Calming, Police Districts, and Crimes):
+With PixieApps, we can create a dashboard with map layers that can be used to visualize various datasets (i.e. Traffic Calming, Police Districts, and Crimes):
 
 ![](doc/source/images/pixieAppsLayers.png)
 
@@ -179,7 +175,7 @@ class SFDashboard():
 """
 ```
 
-#### Create the Map of Accidents
+#### Create the Map of Incidents
 
 ```
 <div id="map{{prefix}}" pd_entity pd_options="{{this.formatOptions(this.mapJSONOptions)}}"/>
@@ -245,10 +241,6 @@ class SFDashboard(MapboxBase):
     ...<snip>...
 
     self.setLayers([
-    {
-            "name": "Speeding",
-            "url": "https://data.sfgov.org/api/geospatial/mfjz-pnye?method=export&format=GeoJSON"
-        },
         {
             "name": "Traffic calming",
             "url": "https://data.sfgov.org/api/geospatial/ddye-rism?method=export&format=GeoJSON",
