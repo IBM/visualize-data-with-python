@@ -197,7 +197,7 @@ The best way to generate the ``pd_options`` for a PixieDust visualization is to:
 
 To conform to the ``pd_options`` notation, we need to transform the PixieDust JSON metadata into an attribute string with the following format: ```“key1=value1;key2=value2;…”```
 
-To make it easier, we use the a simple Python transform function:
+To make it easier, we use a simple Python transform function:
 ```
 def formatOptions(self, options):
     return ';'.join(["{}={}".format(k,v) for (k, v) in iteritems(options)])
