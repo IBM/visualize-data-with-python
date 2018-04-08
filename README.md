@@ -187,7 +187,7 @@ class SFDashboard():
 
 #### Generate the pd_options
 
-The best way to generate the pd_options for a PixieDust visualization is to:
+The best way to generate the ``pd_options`` for a PixieDust visualization is to:
 1.  Call ``display()`` on a new cell
 2.  Graphically select the options for your chart
 3.  Select ``View/Cell Toobar/Edit metadata`` menu
@@ -195,7 +195,7 @@ The best way to generate the pd_options for a PixieDust visualization is to:
 
 ![](doc/source/images/pixieEditMetadata.png)
 
-To conform to the pd_options notation, we need to transform the PixieDust JSON metadata into an attribute string with the following format: ```“key1=value1;key2=value2;…”```
+To conform to the ``pd_options`` notation, we need to transform the PixieDust JSON metadata into an attribute string with the following format: ```“key1=value1;key2=value2;…”```
 
 To make it easier, we use the a simple Python transform function:
 ```
