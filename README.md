@@ -79,7 +79,7 @@ Sign up for IBM's [Watson Studio](https://dataplatform.ibm.com). By creating a p
 * Select the `From URL` tab.
 * Enter a name for the notebook.
 * Optionally, enter a description for the notebook.
-* Enter this Notebook URL: https://github.com/IBM/pixiedust-traffic-analysis/blob/master/notebooks/pixiedust-traffic-analysis.ipynb
+* Enter this Notebook URL: https://raw.githubusercontent.com/IBM/pixiedust-traffic-analysis/master/notebooks/pixiedust-traffic-analysis.ipynb
 * Select the Spark runtime you've associated with this project:
 
 <img width="500" src="doc/source/images/chooseSparkRuntime.png">
