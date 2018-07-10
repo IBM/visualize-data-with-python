@@ -1,8 +1,8 @@
-# Visualize and analyze San Francisco traffic accidents using a Jupyter Notebook, PixieDust, and PixieApps
+# Visualize and analyze San Francisco crime accidents using a Jupyter Notebook, PixieDust, and PixieApps
 
 > Data Science Experience is now Watson Studio. Although some images in this code pattern may show the service as Data Science Experience, the steps and processes will still work.
 
-In this Code Pattern we will use PixieDust running on IBM Watson Studio to analyze traffic data from the City of San Francisco. Watson Studio is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data.
+In this Code Pattern we will use PixieDust running on IBM Watson Studio to analyze crime data from the City of San Francisco. Watson Studio is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data.
 
 When the reader has completed this Code Pattern, they will understand how to:
 
@@ -20,8 +20,8 @@ The intended audience for this Code Pattern is application developers and other 
 # Flow
 
 1. Load the provided notebook into the Watson Studio platform.
-2. [DataSF Open Data](https://datasf.org/opendata/) traffic info is loaded into the Jupyter Notebook.
-3. The notebook analyzes the traffic info.
+2. [DataSF Open Data](https://datasf.org/opendata/) crime info is loaded into the Jupyter Notebook.
+3. The notebook analyzes the crime info.
 4. You can interactively change charts and graphs.
 5. A PixieApp dashboard is created and can be interacted with.
 
