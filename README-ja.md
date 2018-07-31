@@ -11,7 +11,7 @@
 * [Jupyter Notebooks](http://jupyter.org/) を使用してデータをロード、視覚化、分析する
 * [IBM Watson Studio](https://dataplatform.ibm.com/) 内で Jupyter Notebook を実行する
 * [PixieDust](https://github.com/ibm-cds-labs/pixiedust) を IPython Notebook ヘルパーとして使用する
-* [PixieApps](https://ibm-watson-data-lab.github.io/pixiedust/pixieapps.html) を使用してダッシュボードを作成する
+* [PixieApps](https://dataplatform.cloud.ibm.com/docs/content/pixiedust/pixieapps.html) を使用してダッシュボードを作成する
 * サンフランシスコ市の [DataSF Open Data](https://datasf.org/opendata/) からデータをフェッチする
 * [Mapbox GL](https://www.mapbox.com/mapbox-gl-js/api/) を使用してインタラクティブな地図を作成する
 
@@ -38,7 +38,7 @@
 
 * [PixieDust](https://github.com/ibm-cds-labs/pixiedust): Python ノートブックのための Python ヘルパーライブラリ。
 
-* [PixieApps](https://ibm-cds-labs.github.io/pixiedust/pixieapps.html): 分析のための UI 要素を記述し、Jupyter ノートブックで直接実行できる Python ライブラリ。
+* [PixieApps](https://dataplatform.cloud.ibm.com/docs/content/pixiedust/pixieapps.html): 分析のための UI 要素を記述し、Jupyter ノートブックで直接実行できる Python ライブラリ。
 
 * [Mapbox GL](https://www.mapbox.com/mapbox-gl-js/api/): WebGL を使用してインタラクティブな地図をレンダリングするための JavaScript ライブラリ。
 
@@ -300,7 +300,7 @@ class SFDashboard(MapboxBase):
 
 * [youtube 上のデモ動画](https://www.youtube.com/watch?v=cYUdXFEmxP4)
 * [PixieDust](https://github.com/ibm-cds-labs/pixiedust)
-* [PixieApps](https://ibm-watson-data-lab.github.io/pixiedust/pixieapps.html)
+* [PixieApps](https://dataplatform.cloud.ibm.com/docs/content/pixiedust/pixieapps.html)
 * [City of San Francisco Open Data](https://datasf.org/opendata/)
 
 # もっと学ぶ
