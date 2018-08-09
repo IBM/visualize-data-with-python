@@ -215,6 +215,8 @@ pd_options = “{{this.formatOptions(this.mapJSONOptions)}}”
 
 > Note: setup is a special method that will be called automatically when the PixieApp is initialized.
 
+> A Mapbox token is included in the notebook, for now. To get your own visit [Mapbox](https://www.mapbox.com/)
+
 ```
 def setup(self):
     self.mapJSONOptions = {
