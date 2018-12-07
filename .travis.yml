@@ -1,2 +1,2 @@
-language: minimal
+language: generic
 script: false
