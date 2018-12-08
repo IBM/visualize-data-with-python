@@ -45,6 +45,10 @@ The intended audience for this Code Pattern is application developers and other 
 
 [![](http://img.youtube.com/vi/cYUdXFEmxP4/0.jpg)](https://www.youtube.com/watch?v=cYUdXFEmxP4)
 
+# Prerequisites
+
+* Get a [Mapbox Token](https://www.mapbox.com/) for use in the notebook
+
 # Steps
 
 Follow these steps to setup and run this Code Pattern. The steps are
@@ -91,6 +95,8 @@ Sign up for IBM's [Watson Studio](https://dataplatform.ibm.com). By creating a p
 ![](doc/source/images/create_notebook.png)
 
 ## 4. Run the notebook
+
+> NOTE: See the points in the notebook where you will have to enter your [Mapbox Token](https://www.mapbox.com) to render the map.
 
 When a notebook is executed, what is actually happening is that each code cell in
 the notebook is executed, in order, from top to bottom.
