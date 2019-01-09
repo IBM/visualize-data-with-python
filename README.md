@@ -10,8 +10,8 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 * Use [Jupyter Notebooks](http://jupyter.org/) to load, visualize, and analyze data
 * Run Notebooks in [IBM Watson Studio](https://dataplatform.ibm.com/)
-* Leverage [PixieDust](https://github.com/ibm-cds-labs/pixiedust) as a python notebook helper
-* Build a dashboard using [PixieApps](https://ibm-watson-data-lab.github.io/pixiedust/pixieapps.html)
+* Leverage [PixieDust](https://github.com/pixiedust/pixiedust) as a python notebook helper
+* Build a dashboard using [PixieApps](https://pixiedust.github.io/pixiedust/pixieapps.html)
 * Fetch data from [City of San Francisco Open Data](https://datasf.org/opendata/)
 * Create an interactive map with [Mapbox GL](https://www.mapbox.com/mapbox-gl-js/api/)
 
@@ -35,9 +35,9 @@ The intended audience for this Code Pattern is application developers and other 
 
 * [Jupyter Notebooks](http://jupyter.org/): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
 
-* [PixieDust](https://github.com/ibm-cds-labs/pixiedust) Python helper library for python notebooks
+* [PixieDust](https://github.com/pixiedust/pixiedust) Python helper library for python notebooks
 
-* [PixieApps](https://ibm-cds-labs.github.io/pixiedust/pixieapps.html): Python library used to write UI elements for analytics, and run them directly in a Jupyter notebook.
+* [PixieApps](https://pixiedust.github.io/pixiedust/pixieapps.html): Python library used to write UI elements for analytics, and run them directly in a Jupyter notebook.
 
 * [Mapbox GL](https://www.mapbox.com/mapbox-gl-js/api/): JavaScript library that uses WebGL to render interactive maps.
 
@@ -316,8 +316,8 @@ There is a sample of the output in [data/examples/pixiedust-traffic-analysis.htm
 
 # Links
 * [Demo on youtube](https://www.youtube.com/watch?v=cYUdXFEmxP4)
-* [PixieDust](https://github.com/ibm-cds-labs/pixiedust)
-* [PixieApps](https://ibm-watson-data-lab.github.io/pixiedust/pixieapps.html)
+* [PixieDust](https://github.com/pixiedust/pixiedust)
+* [PixieApps](https://pixiedust.github.io/pixiedust/pixieapps.html)
 * [City of San Francisco Open Data](https://datasf.org/opendata/)
 
 # Learn more
