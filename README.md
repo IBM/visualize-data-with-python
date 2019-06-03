@@ -55,11 +55,10 @@ Follow these steps to setup and run this Code Pattern. The steps are
 described in detail below.
 
 1. [Sign up for the Watson Studio](#1-sign-up-for-watson-studio)
-2. [Create the Spark Service](#2-create-the-spark-service)
-3. [Create the notebook](#3-create-the-notebook)
-4. [Run the notebook](#4-run-the-notebook)
-5. [Analyze the results](#5-analyze-the-results)
-6. [Save and Share](#6-save-and-share)
+2. [Create the notebook](#2-create-the-notebook)
+3. [Run the notebook](#3-run-the-notebook)
+4. [Analyze the results](#4-analyze-the-results)
+5. [Save and Share](#5-save-and-share)
 
 ## 1. Sign up for Watson Studio
 
@@ -67,34 +66,19 @@ Sign up for IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/). By creat
 
 > Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
 
-## 2. Create the Spark service
+## 2. Create the notebook
 
-* In your project go to the `Settings` tab, scroll down to `Associated Services` and choose `+ Add service` -> `Spark`
-
-![](doc/source/images/createSparkService.png)
-
-* Either choose and `Existing` Spark service, or create a `New` one
-
-<img width="500" src="doc/source/images/chooseExistingSpark.png">
-
-## 3. Create the notebook
-
-* In [Watson Studio](https://dataplatform.cloud.ibm.com/), click on `Create notebook` to create a notebook.
-* Create a project if necessary, provisioning an object storage service if required.
-* In the `Assets` tab, select the `Create notebook` option.
-* Select the `From URL` tab.
-* Enter a name for the notebook.
-* Optionally, enter a description for the notebook.
-* Enter this Notebook URL: https://raw.githubusercontent.com/IBM/pixiedust-traffic-analysis/master/notebooks/pixiedust-traffic-analysis.ipynb
-* Select the Spark runtime you've associated with this project:
-
-<img width="500" src="doc/source/images/chooseSparkRuntime.png">
-
+* In [Watson Studio](https://dataplatform.cloud.ibm.com/), create a project if necessary, provisioning an object storage service if required.
+* In the `Assets` tab, either click `+ Add to project` -> `Notebook` or `New notebook +`.
+* Select the `From URL` tab. [1]
+* Enter a `Name` for the notebook and optionally a description. [2]
+* Under `Notebook URL` provide the following url: [https://raw.githubusercontent.com/IBM/pixiedust-traffic-analysis/master/notebooks/pixiedust-traffic-analysis.ipynb](https://raw.githubusercontent.com/IBM/pixiedust-traffic-analysis/master/notebooks/pixiedust-traffic-analysis.ipynb) [3]
+* For `Runtime` select the `Spark Python 3.6` option. [4]
 * Click the `Create` button.
 
-![](doc/source/images/create_notebook.png)
+![create notebook choose Spark](doc/source/images/chooseSparkRuntime.png)
 
-## 4. Run the notebook
+## 3. Run the notebook
 
 > NOTE: See the points in the notebook where you will have to enter your [Mapbox Token](https://www.mapbox.com) to render the map.
 
@@ -122,7 +106,7 @@ There are several ways to execute the code cells in your notebook:
     panel. Here you can schedule your notebook to be executed once at some future
     time, or repeatedly at your specified interval.
 
-## 5. Analyze the Results
+## 4. Analyze the Results
 
 After running each cell of the notebook, the results will display. When we use PixieDust ``display()`` to create an interactive dataset, we are able to change the visualization using tables, graphs, and charts.
 
@@ -281,7 +265,7 @@ class SFDashboard(MapboxBase):
 The user can now select layers and the map will dynamically add or remove them.
 
 
-## 6. Save and Share
+## 5. Save and Share
 
 
 ### How to save your work:
