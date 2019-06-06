@@ -1,3 +1,7 @@
+> NOTE: This is the original code pattern for Pixiedust Traffic Analysis,
+using data from the City of San Francisco.
+It is here for historic reasons, and is not supported.
+
 *Read this in other languages: [日本語](README-ja.md).*
 
 # Visualize and analyze San Francisco crime incidents using a Jupyter Notebook, PixieDust, and PixieApps
