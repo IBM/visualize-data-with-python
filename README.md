@@ -17,11 +17,11 @@ The intended audience for this Code Pattern is application developers and other 
 
 # Flow
 
-1. Load the provided notebook into the Watson Studio platform.
-2. Data from the Houston flood of 2017 is loaded into the notebook.
-3. The notebook is used to clean the data, and then  display it.
-4. You can interactively change charts and graphs.
-5. A PixieApp dashboard is created and can be interacted with.
+1. Load the Jupyter notebook onto the IBM Watson Studio platform.
+1. USGS data from the Houston flood of 2017 is loaded into the notebook.
+1. The notebook is used to clean the data, and then  display it.
+1. A PixieApp dashboard is created and can be interacted with.
+1. Mapbox and Folium are used for map visualizations
 
 # Included Components
 
