@@ -48,11 +48,10 @@ Follow these steps to setup and run this Code Pattern. The steps are
 described in detail below.
 
 1. [Sign up for the Watson Studio](#1-sign-up-for-watson-studio)
-2. [Create the Spark Service](#2-create-the-spark-service)
-3. [Create the notebook](#3-create-the-notebook)
-4. [Run the notebook](#4-run-the-notebook)
-5. [Analyze the results](#5-analyze-the-results)
-6. [Save and Share](#6-save-and-share)
+2. [Create the notebook](#2-create-the-notebook)
+3. [Run the notebook](#3-run-the-notebook)
+4. [Analyze the results](#4-analyze-the-results)
+5. [Save and Share](#5-save-and-share)
 
 ## 1. Sign up for Watson Studio
 
@@ -60,38 +59,18 @@ Sign up for IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/). By creat
 
 > Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
 
-## 2. Create the Spark service
-
-* In your project go to the `Settings` tab, scroll down to `Associated Services` and choose `+ Add service` -> `Spark`
-
-![](doc/source/images/createSparkService.png)
-
-* Either choose and `Existing` Spark service, or create a `New` one
-
-<img width="500" src="doc/source/images/chooseExistingSpark.png">
-
 ## 3. Create the notebook
 
-* Clone the github repository:
-
-```
-git clone  git@github.ibm.com:STSA2019/data-visualization-with-python
-```
-
 * In [Watson Studio](https://dataplatform.cloud.ibm.com/), click `New Project +` under Projects or, at the top of the page click `+ New` and choose the tile for `Data Science` and then `Create Project`.
-* In your project go to the `Settings` tab, scroll down to `Associated Services` and choose `+ Add service` -> `Spark`. Either choose and `Existing` Spark service, or create a `New` one.
 * In [Watson Studio](https://dataplatform.cloud.ibm.com/) using the project you've created, click on `+ Add to project` and then choose the  `Notebook` tile, OR in the `Assets` tab under `Notebooks` choose `+ New notebook` to create a notebook.
-* Select the `From File` tab.
-* Enter a name for the notebook.
-* Optionally, enter a description for the notebook.
-* Navigate to where you cloned this git repository in the step above, and choose `data-visualization-with-python/notebooks/HoustonFlood2017.ipynb`
-* Select the Spark runtime you've associated with this project:
+* Select the `From URL` tab. [1]
+* Enter a name for the notebook. [2]
+* Optionally, enter a description for the notebook. [3]
+* Under `Notebook URL` provide the following url: [https://raw.githubusercontent.com/IBM/visualize-data-with-python/master/notebooks/HoustonFlood2017.ipynb](https://raw.githubusercontent.com/IBM/visualize-data-with-python/master/notebooks/HoustonFlood2017.ipynb) [4]
+* For `Runtime` select the `Spark Python 3.6` option. [5]
+* Click the `Create notebook` button. [6]
 
-<img width="500" src="doc/source/images/chooseSparkRuntime.png">
-
-* Click the `Create` button.
-
-![](doc/source/images/create_notebook.png)
+![Create Notebook](doc/sourc/images/DataVisualizationCreateNotebook.png)
 
 ## 4. Run the notebook
 
