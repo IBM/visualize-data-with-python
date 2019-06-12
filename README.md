@@ -70,7 +70,7 @@ Sign up for IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/). By creat
 * For `Runtime` select the `Spark Python 3.6` option. [5]
 * Click the `Create notebook` button. [6]
 
-![Create Notebook](doc/sourc/images/DataVisualizationCreateNotebook.png)
+![Create Notebook](doc/source/images/DataVisualizationCreateNotebook.png)
 
 ## 4. Run the notebook
 
