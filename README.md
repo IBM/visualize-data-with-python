@@ -66,7 +66,7 @@ Sign up for IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/). By creat
 
 ### 3. Run the notebook
 
-> NOTE: See the points in the notebook where you will have to enter your [Mapbox Token](https://www.mapbox.com) to render the map.
+> NOTE: There are points in the notebook where you will have to enter your [Mapbox Token](https://www.mapbox.com) to render the map.
 
 When a notebook is executed, what is actually happening is that each code cell in
 the notebook is executed, in order, from top to bottom.
