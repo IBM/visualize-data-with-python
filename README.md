@@ -13,9 +13,9 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 The intended audience for this Code Pattern is application developers and other stakeholders who wish to utilize the power of Data Science quickly and effectively.
 
-![architecture](doc/source/images/architecture.png)
+## Flow
 
-# Flow
+![architecture](doc/source/images/architecture.png)
 
 1. Load the Jupyter notebook onto the IBM Watson Studio platform.
 1. USGS data from the Houston flood of 2017 is loaded into the notebook.
@@ -23,26 +23,20 @@ The intended audience for this Code Pattern is application developers and other 
 1. A PixieApp dashboard is created and can be interacted with.
 1. Mapbox and Folium are used for map visualizations
 
-# Included Components
+## Included technologies
 
 * [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
-
-## Featured technologies
-
 * [Jupyter Notebooks](https://jupyter.org/): An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
-
 * [PixieDust](https://github.com/pixiedust/pixiedust) Python helper library for python notebooks
-
 * [PixieApps](https://pixiedust.github.io/pixiedust/pixieapps.html): Python library used to write UI elements for analytics, and run them directly in a Jupyter notebook.
-
 * [Mapbox GL](https://www.mapbox.com/mapbox-gl-js/api/): JavaScript library that uses WebGL to render interactive maps.
 
-# Prerequisites
+## Prerequisites
 
 * An account on IBM Cloud to access [Watson Studio](https://www.ibm.com/cloud/watson-studio)
 * Get a [Mapbox Token](https://www.mapbox.com/) for use in the notebook
 
-# Steps
+## Steps
 
 Follow these steps to setup and run this Code Pattern. The steps are
 described in detail below.
@@ -50,16 +44,14 @@ described in detail below.
 1. [Sign up for the Watson Studio](#1-sign-up-for-watson-studio)
 2. [Create the notebook](#2-create-the-notebook)
 3. [Run the notebook](#3-run-the-notebook)
-4. [Analyze the results](#4-analyze-the-results)
-5. [Save and Share](#5-save-and-share)
 
-## 1. Sign up for Watson Studio
+### 1. Sign up for Watson Studio
 
 Sign up for IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/). By creating a project in Watson Studio a free tier ``Object Storage`` service will be created in your IBM Cloud account. Take note of your service names as you will need to select them in the following steps.
 
 > Note: When creating your Object Storage service, select the ``Free`` storage type in order to avoid having to pay an upgrade fee.
 
-## 3. Create the notebook
+### 2. Create the notebook
 
 * In [Watson Studio](https://dataplatform.cloud.ibm.com/), click `New Project +` under Projects or, at the top of the page click `+ New` and choose the tile for `Data Science` and then `Create Project`.
 * In [Watson Studio](https://dataplatform.cloud.ibm.com/) using the project you've created, click on `+ Add to project` and then choose the  `Notebook` tile, OR in the `Assets` tab under `Notebooks` choose `+ New notebook` to create a notebook.
@@ -72,7 +64,7 @@ Sign up for IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/). By creat
 
 ![Create Notebook](doc/source/images/DataVisualizationCreateNotebook.png)
 
-## 4. Run the notebook
+### 3. Run the notebook
 
 > NOTE: See the points in the notebook where you will have to enter your [Mapbox Token](https://www.mapbox.com) to render the map.
 
@@ -100,52 +92,11 @@ There are several ways to execute the code cells in your notebook:
     panel. Here you can schedule your notebook to be executed once at some future
     time, or repeatedly at your specified interval.
 
-## 5. Analyze the Results
-
-## 6. Save and Share
-
-
-### How to save your work:
-
-Under the `File` menu, there are several ways to save your notebook:
-
-* `Save` will simply save the current state of your notebook, without any version
-  information.
-* `Save Version` will save your current state of your notebook with a version tag
-  that contains a date and time stamp. Up to 10 versions of your notebook can be
-  saved, each one retrievable by selecting the `Revert To Version` menu item.
-
-### How to share your work:
-
-You can share your notebook by selecting the “Share” button located in the top
-right section of your notebook panel. The end result of this action will be a URL
-link that will display a “read-only” version of your notebook. You have several
-options to specify exactly what you want shared from your notebook:
-
-* `Only text and output`: will remove all code cells from the notebook view.
-* `All content excluding sensitive code cells`:  will remove any code cells
-  that contain a *sensitive* tag. For example, `# @hidden_cell` is used to protect
-  your dashDB credentials from being shared.
-* `All content, including code`: displays the notebook as is.
-* A variety of `download as` options are also available in the menu.
-
-# Sample Output
+## Sample Output
 
 > Note: Some interactive map functionality, like ```Options``` and ```Layers``` will not work. To see these, you must run the notebook itself.
 
-# Links
-* [PixieDust](https://github.com/pixiedust/pixiedust)
-* [PixieApps](https://pixiedust.github.io/pixiedust/pixieapps.html)
-
-# Learn more
-
-* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/technologies/artificial-intelligence/).
-* **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/technologies/data-science/)
-* **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
-* **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
-* **Watson Studio**: Master the art of data science with IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/)
-
-# License
+## License
 
 This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
