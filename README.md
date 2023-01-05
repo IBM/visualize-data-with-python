@@ -1,3 +1,7 @@
+# WARNING: This repository is no longer maintained
+
+> This repository will not be updated. The repository will be kept available in read-only mode.
+
 # Visualize and analyze data from the 2017 flood in Houston, TX using a Jupyter Notebook on IBM Watson Studio
 
 In this Code Pattern we will use some standard techniques for data science and data engineering running on IBM Watson Studio to analyze publicly available data for the 2017 flooding in Houston, TX. Watson Studio is an interactive, collaborative, cloud-based environment where data scientists, developers, and others interested in data science can use tools (e.g., RStudio, Jupyter Notebooks, Spark, etc.) to collaborate, share, and gather insight from their data.
